@@ -1,11 +1,11 @@
-﻿using FilmesAPI.Models;
+﻿using FilmesApi.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FilmesAPI.Data.Dtos
+namespace FilmesApi.Data.Dtos
 {
     public class ReadFilmeDto
     {

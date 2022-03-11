@@ -3,19 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace FilmesApi.Data.Dtos
+namespace FilmesApi.Data.Dtos.Gerente
 {
-    public class ReadEnderecoDto
+    public class ReadGerenteDto
     {
         [Key]
         [Required]
         public int Id { get; set; }
-        public string Logradouro { get; set; }
-        public string Bairro { get; set; }
-        public int Numero { get; set; }
-
+        [Required(ErrorMessage = "O campo nome é obrigatório")]
+        public string Nome { get; set; }
+        public object Cinemas { get; set; }
     }
 }

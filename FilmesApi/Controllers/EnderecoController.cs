@@ -1,18 +1,15 @@
 ﻿using AutoMapper;
 using FilmesApi.Data;
 using FilmesApi.Models;
-using FilmesAPI.Data.Dtos;
-using FilmesAPI.Models;
+using FilmesApi.Data.Dtos;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
-namespace FilmesAPI.Controllers
+namespace FilmesApi.Controllers
 {
     [ApiController]
-    [Route("api/endereco")]
+    [Route("endereco")]
     public class EnderecoController : ControllerBase
     {
         private AppDbContext _context;

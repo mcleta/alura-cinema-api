@@ -1,15 +1,15 @@
 ﻿using FilmesApi.Models;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace FilmesApi.Data.Dtos
+namespace FilmesApi.Models
 {
-    public class ReadCinemaDto
+    public class Gerente
     {
         [Key]
         [Required]
         public int Id { get; set; }
         public string Nome { get; set; }
-        public Endereco Endereco { get; set; }
-        public Models.Gerente Gerente { get; set; } // WTF!!!!!
+        public virtual List<Cinema> Cinemas { get; set; }
     }
 }
