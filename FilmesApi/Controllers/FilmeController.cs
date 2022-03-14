@@ -1,7 +1,6 @@
 ﻿
 using AutoMapper;
 using FilmesApi.Data;
-using FilmesApi.Data;
 using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +31,8 @@ namespace FilmesApi.Controllers
             Filme filme = _mapper.Map<Filme>(filmeDto);
             _context.Filmes.Add(filme);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaFilmesPorId), new { Id = filme.Id }, filme);
+                                                                 // { Id = filme.Id }
+            return CreatedAtAction(nameof(RecuperaFilmesPorId), new { filme.Id }, filme);
         }
 
         [HttpGet]

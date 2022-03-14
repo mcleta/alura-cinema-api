@@ -2,10 +2,11 @@
 using AutoMapper;
 using FilmesApi.Data;
 using FilmesApi.Models;
-using FilmesApi.Data.Dtos.Gerente;
+using FilmesApi.Data.Dtos.Sessao;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
+using FilmesApi.Data.Dtos.Gerente;
 
 namespace FilmesApi.Controllers
 {
